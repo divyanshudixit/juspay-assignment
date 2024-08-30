@@ -52,7 +52,7 @@ export default function Sidebar() {
           >
             <li className="mt-3">
               <span
-                className="bg-gray-300 rounded-md p-1 flex items-center cursor-pointer"
+                className="bg-gray-400 p-1 flex items-center cursor-pointer"
                 onClick={() => toggleCategory("motion")}
               >
                 <h1>MOTION</h1>
@@ -83,7 +83,7 @@ export default function Sidebar() {
             </li>
             <li className="mt-3">
               <span
-                className="bg-gray-300 rounded-md p-1 flex items-center cursor-pointer"
+                className="bg-gray-400 p-1 flex items-center cursor-pointer"
                 onClick={() => toggleCategory("looks")}
               >
                 <h1>LOOKS</h1>
@@ -91,37 +91,6 @@ export default function Sidebar() {
               {expandedCategory === "looks" && (
                 <ul>
                   {LockList.map((item, index) => (
-                    <Draggable
-                      key={`${item}-actionValue`}
-                      draggableId={`${item}-actionValue`}
-                      index={index}
-                      type="block-1"
-                    >
-                      {(value) => (
-                        <li
-                          ref={value.innerRef}
-                          {...value.draggableProps}
-                          {...value.dragHandleProps}
-                          className="my-4 ml-4"
-                        >
-                          {componentSelection(item)}
-                        </li>
-                      )}
-                    </Draggable>
-                  ))}
-                </ul>
-              )}
-            </li>
-            <li className="mt-3">
-              <span
-                className="bg-gray-300 rounded-md p-1 flex items-center cursor-pointer"
-                onClick={() => toggleCategory("control")}
-              >
-                <h1>CONTROL</h1>
-              </span>
-              {expandedCategory === "control" && (
-                <ul>
-                  {ControlList.map((item, index) => (
                     <Draggable
                       key={`${item}-actionValue`}
                       draggableId={`${item}-actionValue`}

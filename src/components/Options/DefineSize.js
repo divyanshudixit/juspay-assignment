@@ -17,7 +17,7 @@ const DefineSize = (value) => {
       maxWidth: '200px',
     }}>
       <div className="relative">
-        <div className="bg-purple-700 rounded-md p-1 flex items-center"
+        <div className="bg-blue-700 rounded-md p-1 flex items-center"
         >
           <p className="text-white text-xs mr-2">Set the Size to {" "}</p>
           <div className="flex-1">
@@ -31,7 +31,7 @@ const DefineSize = (value) => {
             />
           </div>
         </div>
-        <div className="absolute bottom-5 left-0 h-5 w-10 bg-purple-700 transform rounded-all rounded-lg"></div>
+        <div className="absolute bottom-5 left-0 h-5 w-10 bg-blue-700 transform rounded-all rounded-lg"></div>
 
       </div>
     </div>

@@ -140,7 +140,7 @@ export default function MidArea({
       </div>
 
       <button
-        className="bg-green-600 text-white px-2 py-1 rounded-md cursor-pointer shadow-sm ml-2 mb-3"
+        className="bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointer shadow-sm ml-2 mb-3"
         onClick={addblock}>
         Add block
       </button>
@@ -157,16 +157,16 @@ export default function MidArea({
               id={block.id}
               {...provided.droppableProps}
               ref={provided.innerRef}
-              className="bg-gray-100 p-5 m-2 rounded-lg shadow-md w-72 min-h-48 overflow-y-auto flex flex-col"
+              className="bg-gray-200 p-5 m-2 rounded-lg shadow-md w-72 min-h-48 overflow-y-auto flex flex-col"
             >
               <span
-                className="text-red-500 cursor-pointer flex ml-auto items-center mb-4"
+                className="text-white-500 bg-red-400 rounded-md cursor-pointer flex ml-auto items-center mb-4 p-2"
                 onClick={() => deleteblock(block.id)}
               >
                 Delete Block
               </span>
               <button
-                className="bg-green-600 text-white px-2 py-1 rounded-md cursor-pointer shadow-sm ml-2 mb-3"
+                className="bg-purple-600 text-white px-2 py-1 rounded-md cursor-pointer shadow-sm ml-2 mb-3"
                 onClick={() => runClick(block.id)}
               >
                 Run Block

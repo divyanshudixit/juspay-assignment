@@ -25,7 +25,7 @@ const TurnCounterclockwise = (value) => {
     }}>
       <div className="relative">
 
-        <div className="bg-blue-500 rounded-md p-1 flex items-center">
+        <div className="bg-green-500 rounded-md p-1 flex items-center">
           <p className="text-white text-xs mr-2">Turn <FontAwesomeIcon icon={faRotateLeft} /> for {" "}</p>
           <div className="flex-1">
             <input
@@ -38,7 +38,7 @@ const TurnCounterclockwise = (value) => {
             />
           </div>
         </div>
-        <div className="absolute bottom-5 left-0 h-5 w-10 bg-blue-500 transform rounded-all rounded-lg"></div>
+        <div className="absolute bottom-5 left-0 h-5 w-10 bg-green-500 transform rounded-all rounded-lg"></div>
 
       </div>
     </div>
